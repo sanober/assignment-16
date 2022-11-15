@@ -1,0 +1,58 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <script>
+
+        // Exercise 1:
+        let categories = ["Health", "Fashion&quot", "Toys", "Electronic", "TV", "Sports", "Watches", "Motorbike&quot",
+            "Home and Lifestyle", "Devices"];
+        let categories_firsthalf = categories.slice(0, 5);
+        console.log(categories_firsthalf);
+
+        // Exercise 2:
+
+        const str1 = ["Apple", "Bananna", "Orange", "Grapes"]
+        const str2 = ["abc", "def", "ghi", "jkl"]
+        const newArr = str1.slice(1) + ',' + str2.slice(1);
+        console.log(newArr);
+
+        // Exercise 3
+        const NumericArray = ['80', '9', '700', 40, 1, 5, 200];
+        console.log(NumericArray.sort(function (a, b) { return a - b }));
+        console.log(NumericArray.sort(function (a, b) { return a - b }).reverse());
+
+        // Excersie 4
+        const months = ['Jan', 'March', 'April', 'Dec'];
+        months.splice(1, 0, 'Feb');
+        console.log(months);
+
+        //Excercise 5
+        let joinarr = ['Me', 'my family'];
+        joinarr.splice(1, 0, 'and');
+        console.log(joinarr);
+
+        // Excercise 6
+        var number = 25;
+
+        if (number > 2 && number < 10) {
+            console.log("Number is between 2 and 10");
+        } else if (number > 10 && number < 19) {
+            console.log("Number is between 10 and 19");
+        } else if (number > 19 && number < 30) {
+            console.log("Number is between 19 and 29");
+        } else {
+            console.log("Sorry try again");
+        }
+    </script>
+</body>
+
+</html>
